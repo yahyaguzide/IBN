@@ -1,0 +1,103 @@
+%	lecture: IBN( Introduction to OS's and Networking )
+%	date(dd/mm/yyyy): 19/04/2019
+%	lecture is held by Prof. Dr. Artur Adrzejak
+%	
+%	Yahya Guezide
+
+\documentclass[a4paper, 11pt, twoside]{article}
+
+\author{Prof. Dr. Artur Andrzejak}
+\title{Einf\"uhrung in Betriebssysteme und Netzwerke}
+\date{\today}
+
+% to write Roman Numerals use \rom{num}
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\usepackage[document]{ragged2e}
+\begin{document}
+	\maketitle
+	\newpage
+
+	\tableofcontents
+	\newpage
+
+	\section{Was ist ein Betriebssystem}
+	Betriebsysteme sind \"uberall, in unseren PC's, Laptops, Handy's
+	ja sogar Milchpump-maschinen ben\"otigen ein Betriebssystem.
+	\linebreak
+	Nun was ist ein Betriebssystem?
+	\linebreak
+
+	vereinfacht \textbf{{\em``Ein Program, das immer laufen muss''}} ??
+	\linebreak\linebreak
+	Eine richtige Definition ist dies nicht, ein besserer ansatz w\"are
+	\linebreak
+	\textbf{ {\em``Die Softwareschicht zwischen Hardware und Anwendungsprogrammen''}}
+	\linebreak
+	nehmen wir f\"ur denn moment diese Definition so an, was genau ein Betriebssystem
+	ist und was es alles macht werden wir im verlauf lernen und besser verstehen.
+
+	\subsection{Komplexität von Betriebssystemen}
+	Betrachten wir ein paar der bekanntesten Systeme
+	\linebreak
+
+	Gebebene Werte sind in Millionen
+	% ToDo: Quelle angeben
+	\begin{itemize}
+		\item OpenSolaris			9.7
+		oitem Linux Kernel2.6.32	12.6
+		\item Mac Os X 10.4			84
+		\item Debian 4.0/5.0		283/324 
+	\end{itemize}
+%	\linebreak
+
+	Auch Windows hat sich drastisch ver\"andert und dem Zeitgeist angepasst
+	% ToDo: liste etwas weiter nach rechts verschieben 
+	\begin{description}
+		\item[1993] Windows NT 3.1	4-5
+		\item[1994] Windows NT 3.5	7-8
+		\item[1996] Windwos NT 4.0	11-12
+		\item[2000] Windows 2000		>29
+		\item[2001] Windows XP		40
+		\item[2006] Windows Vista	50
+		\item[2009] Windows 7		40
+		\item[2010] Windows 10		27-50
+	\end{description}
+
+	\subsection{Rechner Erster Generation}
+	\label{sec:rechnererstergeneration}
+	\begin{description}
+		\item[1941] Z3 von Konrad Zuse, Berlin (Relais)
+		\item[1943] Colossus in Bletchley Park, UK (2500 R\"ohren)
+		\item[1944] Mark\rom{1} in Harvard Univ. (Relais, Schalter)
+		\item[1946] Eniac von William Mauchley / J. Presper Eckert Univ. Pennsylvania (17.468 Elek R\"ohren)
+	\end{description}
+	
+	Rechner der Ersten Generation bestanden aus Relais und Elektronenr\"ohren, bevor es spezelle sprachen
+	zum bedienen der rechner gab wurden programme durch ``umstecken'' von Kabeln
+	und oder mit hilfe von lochkarten eingelesen.
+	\linebreak
+	Die Elektronenr\"ohren waren sehr empfindlich und teuer dies bedeutete
+	das jeder fehler im programm zu langen wartezeiten und zu einem anstieg der kosten f\"uhrte.
+	Diese Rechner hatten noch kein Betriebssystem, die Hardware wurde direkt verwendet.
+	\linebreak\linebreak
+	Als hersteller anfingen spezielle sprachen f\"ur die rechner zu entwickeln setzte sich Assembler durch
+	und die Programme wurden f\"ur diese Rechner mit Assambler und sp\"ater mit Fortran geschrieben.
+
+	% ToDO: add video links from vl01-ibn.pdf at page 7
+	
+	\subsubsection{Die Von Neuman-Architektur (VNA)}
+	Der Eniac[\ref{sec:rechnererstergeneration}] hatte keinen Programmspeicher, die programmierung erfolgte per
+	umstecken verschiedener Kabel.
+	\linebreak
+
+	John von Neuman ve\"offentlichte 1945 das Konzept der VNA(Princton Architektur),
+	dieses ist ein Schaltungskonzept  f\"ur einen Universellen Rechner.
+	In diesem Konzept enthielt der Speicher Daten und Programcode.
+	Eine der fr\"uhesten Rechner der diese Architektur nutze war der Evac,
+	der postdecessor von Eniac[\ref{sec:rechnererstergeneration}] welcher 
+
+
+\end{document}
